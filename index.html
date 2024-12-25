@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "primary-color": "#ABEF5F",
+              "primary-bg": "#E9E9E9",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/642bbcc4a6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>rinterio</title>
+  </head>
+  <body class="bg-primary-bg">
+    <header class="container mx-auto px-16 py-3">
+      <!-- navbar section -->
+      <div class="navbar sm:flex justify-around">
+        <div class="navbar-start sm:flex justify-between ">
+          <div class="flex  items-center space-x-1">
+            <i
+              class="fa-solid fa-arrow-right bg-primary-color rounded-full h-6 w-6 flex justify-center items-center -rotate-45"
+            ></i>
+            <h2 class="text-2xl font-bold">Rinterio</h2>
+          </div>
+
+          <!-- drop down -->
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 bg-white p-1 rounded-full"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-[#737373]">
+            <li><a class="text-[#494949] font-bold">Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+          <div class="flex justify-center items-center space-x-4">
+            <i
+              class="fa-solid fa-magnifying-glass bg-[#FFFFFF] p-2 rounded-full"
+            ></i>
+            <i
+              class="fa-solid fa-cart-shopping bg-[#FFFFFF] p-2 rounded-full"
+            ></i>
+            <a class="btn bg-primary-color rounded-full"
+              >Book Consult
+              <i
+                class="fa-solid fa-arrow-right bg-[#1C1C1C] text-white rounded-full h-6 w-6 flex justify-center items-center -rotate-45"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- house section -->
+    <div class="card container mx-auto px-16  ">
+      <figure class="px-5 pt-10">
+        <img
+          src="assets/banner.png"
+          alt="houses"
+          class="" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title sm:text-xl font-bold lg:text-6xl">A barn house of this design has a <br> striking appearance</h2>
+        <p class="text-[#494949] text-base ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br>accents, and large windows that flood the space with natural light.</p>
+        <div class="card-actions">
+          <button class="flex flex-row gap-1 p-3 rounded-full font-semibold bg-[rgba(171,239,95,0.5)] ">View Details <i
+            class="fa-solid fa-arrow-right bg-primary-color rounded-full h-6 w-6 flex justify-center items-center -rotate-45"
+          ></i> </button>
+        </div>
+      </div>
+    </div>
+
+    <main></main>
+
+    <footer></footer>
+  </body>
+</html>
